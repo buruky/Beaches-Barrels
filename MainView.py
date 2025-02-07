@@ -8,5 +8,7 @@ class MainView:
 
     def draw(self, model):
         self.screen.fill((0, 0, 0))  # Clear screen with black
-        pygame.draw.rect(self.screen, model.color, (model.player_x, model.player_y, 50, 50))# pygame.display.update()
+
+        self.screen.blit(model.image, model.rect)
+        # pygame.draw.rect(self.screen, model.color, (model.player_x, model.player_y, model.width, model.height))# pygame.display.update()
         pygame.display.flip()  # Update display

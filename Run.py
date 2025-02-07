@@ -5,7 +5,7 @@ from MainModel import MainModel
 
 pygame.init()
 class Run:
-    model = MainModel()
+    model = MainModel("S:\comp sci\BeachesNBarrels\Beaches-N-Barrels\Images\luffy.png")
     view = MainView()
     controller = MainController(model)
     
